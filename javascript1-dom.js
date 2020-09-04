@@ -58,7 +58,7 @@ window.addEventListener("load",function() {
 
 // Ex4 : childNodes를 이용한 노드 선택
 window.addEventListener("load",function() {
-    var section3 = document.querySelector("#section3");
+    var section4 = document.querySelector("#section4");
     var box = section4.querySelector(".box");
     
     var input1 = box.children[0]; //.childNodes[0];
@@ -67,4 +67,20 @@ window.addEventListener("load",function() {
     input1.value = "hello";
     input2.value = "okay";
 
+});
+
+// Ex5 : 엘리먼트 노드의 속성 변경
+window.addEventListener("load",function() {
+    var section = document.querySelector("#section5");
+    var srcInput = section.querySelector(".src-input");
+    var imgSelect = section.querySelector(".img-select");
+    var changeButton = section.querySelector(".change-button");
+    var img = section.querySelector(".img");
+
+    changeButton.onclick = function(){
+       img.src = "images/" + srcInput.value;
+       // img.src = "images/" + imgSelect.value;
+    };
+    
+    
 });
