@@ -104,5 +104,229 @@
         </div>
     </section>
     <hr />
+
+    <section id="section4">
+        <h1>Ex4 : 서로 다른 기능의 여러 버튼을 가진 화면에서 이벤트를 처리하는 방법</h1>
+        <table border="1" class="notice-list">
+            <thead>
+                <tr>
+                    <td>번호</td>
+                    <td>제목</td>
+                    <td>작성일</td>
+                    <td>작성자</td>
+                    <td>조회수</td>
+                    <td>관리</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><a href="1">자바스크립트란..</a></td>
+                    <td>2019-01-25</td>
+                    <td>newlec</td>
+                    <td>2</td>
+                    <!-- <td>
+                        <input type="button" class="button sel-button aa bb" value="선택" />
+                        <input type="button" class="edit-button" value="수정" />
+                        <input type="button" class="del-button" value="삭제" />
+                    </td> -->
+                    <td>
+                        <a class="sel-button" href="">선택</a>
+                        <a class="edit-button" href="">수정</a>
+                        <a class="del-button" href="">삭제</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="2">유투브에 끌려다니지 않으려고 했는데....ㅜㅜ..</a></td>
+                    <td>2019-01-25</td>
+                    <td>newlec</td>
+                    <td>0</td>
+                    <td>
+                        <input type="button" class="button sel-button aa bb" value="선택" />
+                        <input type="button" class="edit-button" value="수정" />
+                        <input type="button" class="del-button" value="삭제" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="3">기본기가 튼튼해야....</a></td>
+                    <td>2019-01-25</td>
+                    <td>newlec</td>
+                    <td>1</td>
+                    <td>
+                        <input type="button" class="sel-button" value="선택" />
+                        <input type="button" class="edit-button" value="수정" />
+                        <input type="button" class="del-button" value="삭제" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="4">근데 조회수가 ㅜㅜ..</a></td>
+                    <td>2019-01-25</td>
+                    <td>newlec</td>
+                    <td>0</td>
+                    <td>
+                        <input type="button" class="sel-button" value="선택" />
+                        <input type="button" class="edit-button" value="수정" />
+                        <input type="button" class="del-button" value="삭제" />
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <hr />
+
+    <section id="section5">
+        <h1>Ex5 : Trigger</h1>
+        <style>
+            .file-button{
+                display: none;
+            }
+
+            .file-trigger-button{
+                background: green;
+                border: 1px solid lightgreen;
+                border-radius: 5px;
+                padding: 5px 10px;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            .file-trigger-button:hover {
+                background: limegreen;
+            }
+        </style>
+        <input type="file" class="file-button"/>
+        <span class="file-trigger-button">파일선택</span>
+    </section>
+    </hr>
+
+    <section id="section6">
+        <h1>Ex6 : 마우스 이벤트 객체 - 마우스 좌표</h1>
+        <style>
+            .container {
+                width: 800px;
+                height: 400px;
+                border: 1px solid gray;
+            }
+
+            .box {
+                width: 100px;
+                height: 100px;
+                background: blue;
+            }
+        </style>
+        <div class="container">
+            <div class="box"></div>
+        </div>
+    </section>
+    </hr>
+
+    <section id="section7">
+        <h1>Ex7 : 마우스 이벤트 객체 - 드래그 방식으로 박스 옮기기</h1>
+        <style>
+            .container {
+                width: 800px;
+                height: 400px;
+                border: 1px solid gray;
+            }
+
+            .box {
+                width: 100px;
+                height: 100px;
+                background: blue;
+                position: absolute;
+            }
+        </style>
+        <div class="container">
+            <div class="box"></div>
+        </div>
+    </section>
+    </hr>
+
+    <section id="section8">
+        <h1>Ex8 : 마우스 이벤트 객체 - 여러개 박스 드래그 방식으로 옮기기</h1>
+        <style>
+            .container {
+                width: 800px;
+                height: 400px;
+                border: 1px solid gray;
+            }
+
+            .box {
+                width: 100px;
+                height: 100px;
+                background: blue;
+                position: absolute;
+            }
+        </style>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </section>
+    </hr>
+
+    <section id="section9">
+        <h1>Ex9 : 마우스 이벤트 객체 - 박스의 offset 영역 좌표 이용하기</h1>
+        <style>
+            .container {
+                width: 800px;
+                height: 400px;
+                border: 1px solid gray;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .box {
+                width: 100px;
+                height: 100px;
+                background: blue;
+                position: absolute;
+            }
+        </style>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="status"></div>
+    </section>
+    </hr>
+
+    <section id="section9">
+        <h1>Ex10 : 마우스 이벤트 객체 - drag drop(draggable)</h1>
+        <style>
+            .container {
+                width: 800px;
+                height: 400px;
+                border: 1px solid gray;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .box {
+                width: 100px;
+                height: 100px;
+                background: blue;
+                position: absolute;
+            }
+
+            .dropzone {
+                width: 200px;
+                height: 200px;
+                border: 1px solid gray;
+            }
+        </style>
+        <div class="container">
+            <!-- <div class="box"></div>
+            <div class="box"></div> -->
+            <div class="box" draggable="true"></div>
+        </div>
+        <div class="dropzone"></div>
+    </section>
+    </hr>
 </body>
 </html>
